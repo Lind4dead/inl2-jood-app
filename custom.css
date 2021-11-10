@@ -1,9 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 15rem;
+  padding: 15rem;
   box-sizing: border-box;
 }
-
 .container {
   width: 80%;
   margin: auto;
