@@ -21,3 +21,6 @@
   width: 80%;
   margin: auto;
 }
+.carousel {
+  background-color: var(--bg-primary-1);
+}
