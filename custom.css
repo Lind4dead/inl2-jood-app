@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.apple {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
 .container {
   width: 80%;
   margin: auto;
