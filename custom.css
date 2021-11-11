@@ -17,6 +17,24 @@ p {
   color: var(--text-color);
 }
 
+#about-us {
+  height: 2rem;
+  width: 100px;
+  background-color: #ffbb002c;
+  color: #ffbb00;
+  padding: .5rem;
+  border-radius: .4rem;
+  font-size: 1rem;
+}
+.container img {
+  width: 200px;
+}
+.downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Application - Emil */
 .app-text-color {
   color: var(--app-color);
@@ -35,3 +53,4 @@ p {
   justify-content: center;
   align-items: center;
 }
+
