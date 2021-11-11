@@ -15,6 +15,7 @@
 
 p {
   color: var(--text-color);
+  /* font-size: 16px; */
 }
 
 /* Application - Emil */
@@ -24,14 +25,15 @@ p {
 .grid-wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: minmax(auto, auto);
   gap: 1rem;
 }
 .item {
-  /* background-color: teal; */
-  /* border: 1px dotted #333; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.app-text {
+  width: 45%;
 }
