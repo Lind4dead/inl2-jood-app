@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 :root {
   --bg-primary-1: #1487fd;
   --bg-primary-2: #42A0FF;
@@ -11,3 +14,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Footer start */
+.bg {
+  background-image: url(/img/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex {
+  display: flex;
+}
+/* Flex, ändra till samma som i andra sektioner */
+
+.logo {
+  font-family: Poppins;
+  font-size: 41pt;
+  color: #fff;
+  padding: 1rem 2rem 0 1rem;
+  position: relative;
+}
+.ball {
+  background-color: var(--button-color);
+  height: 12pt;
+  width: 12pt;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+.links {
+  font-family: Roboto;
+  text-decoration: none;
+  font-size: 18pt;
+  color: #fff;
+}
+.icons {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.bg-icons {
+  width: 32pt;
+  height: 32pt;
+  background-color: rgba(255, 255, 255, 0.151);
+  border: transparent;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a:hover {
+  color: #fff;
+}
+/* Hur ska länkarna stylas? Inte alls? Som i tidigare sektioner? */
+/* Footer end */
