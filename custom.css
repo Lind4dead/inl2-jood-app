@@ -22,7 +22,8 @@
   background-size: cover;
 }
 .logo {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   font-size: 41pt;
   color: #fff;
   padding: 1rem 2rem 0 1rem;
@@ -39,8 +40,9 @@
   bottom: 20%;
 }
 .links {
-  font-family: Roboto;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   font-size: .8rem;
   color: #fff;
 }
