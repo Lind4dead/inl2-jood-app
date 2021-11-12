@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 :root {
   --bg-primary-1: #1487fd;
@@ -15,27 +15,30 @@
 }
 /* Contact us start */
 .title {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   font-size: 1.875rem;
   color: var(--title-color)
 }
 p {
-  /* font-family: ; */
-  /* font-size: 1rem; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: var(--text-color);
 }
 .form-control {
   background-color: #FBFBFB;
   border-radius: .5rem;
   border: none;
-  padding: 1rem;
+  padding: 1.5rem;
 }
-/* HUR GÖR JAG PLACEHOLDER TEXTEN LJUSGRÅ?? */
+::placeholder {
+  color: #CCCCCC !important;
+}
 .btn-blue {
   background-color: #3096FE;
-  color: #fff;
+  color: #FFF;
   border: none;
   border-radius: .5rem;
-  padding: .8rem 5rem;
+  padding: 1rem 5rem;
 }
 /* Contact us end */
