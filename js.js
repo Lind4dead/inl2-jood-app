@@ -1,23 +1,17 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
-  spaceBetween: 300,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // breakpoints: {
-  //   568: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 20,
-  //   },
-  //   768: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 40,
-  //   },
-  //   1024: {
-  //     slidesPerView: 5,
-  //     spaceBetween: 50,
-  //   },
-});
+// Swiper: Slider
+var kaSwiper1 = new Swiper ('#ka-swiper1', {
+    loop: true,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween : 20,
+    // slidesPerGroup: 1,
+    autoHeight: true,
+    breakpoints :{
+      768:{
+        spaceBetweenSlides: 10
+      }
+    }
+  });
+
