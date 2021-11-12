@@ -37,9 +37,14 @@ p {
 .app-text {
   width: 45%;
 }
+/* .carousel-container {
+  width: 80%;
+} */
 .swiper-container{
   height: auto;
-  /* width: 400px; */
+}
+.swiper-container .swiper-wrapper {
+  width:100%;
 }
   .swiper-wrapper{
 -webkit-box-align: center;
@@ -54,22 +59,36 @@ p {
   }
 .swiper-slide{
     background-color: transparent;
-    width: 180px;
+    width: 400px;
     border-radius: 15%;
+    margin: auto;
   }
 .swiper-slide img {
-  width: 180px;
-  opacity: .5;
+  width: 160px;
+  opacity: .4;
 }
 .swiper-slide-active {
-  width: 200px;
+  width: 400px;
+  margin: auto;
 }
 .swiper-slide-active img{
       background-color: transparent;
-      width: 100% ;
+      width: 200px ;
+      margin: auto;
       height: 100%;
       opacity: 1;
-      
-
-
+    }
+.swiper-slide-prev img{
+      background-color: transparent;
+      width: 180px ;
+      margin: auto;
+      height: 100%;
+      opacity: .7;
+    }
+.swiper-slide-next img{
+      background-color: transparent;
+      width: 180px ;
+      margin: auto;
+      height: 100%;
+      opacity: .7;
     }

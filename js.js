@@ -5,7 +5,7 @@ var kaSwiper1 = new Swiper ('#ka-swiper1', {
     paginationClickable: true,
     centeredSlides: true,
     slidesPerView: 'auto',
-    spaceBetween : 20,
+    spaceBetween : 30,
     // slidesPerGroup: 1,
     autoHeight: true,
     breakpoints :{
