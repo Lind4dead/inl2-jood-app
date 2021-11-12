@@ -13,9 +13,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.header {
+/* Contact us start */
+.title {
   font-family: Roboto;
-  /* font-size: 1.875rem; */
-  color: #000;
+  font-size: 1.875rem;
+  color: var(--title-color)
 }
+p {
+  /* font-family: ; */
+  /* font-size: 1rem; */
+  color: var(--text-color);
+}
+.form-control {
+  background-color: #FBFBFB;
+  border-radius: .5rem;
+  border: none;
+  padding: 1rem;
+}
+/* HUR GÖR JAG PLACEHOLDER TEXTEN LJUSGRÅ?? */
+.btn-blue {
+  background-color: #3096FE;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .8rem 5rem;
+}
+/* Contact us end */
