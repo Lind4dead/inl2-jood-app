@@ -29,9 +29,12 @@ p {
   background-color: #FBFBFB;
   border-radius: .5rem;
   border: none;
-  padding: 1.5rem;
+  /* padding: 1rem; */
 }
-::placeholder {
+input {
+  max-height: 70px;
+}
+*::placeholder {
   color: #CCCCCC !important;
 }
 .btn-blue {
@@ -42,3 +45,9 @@ p {
   padding: 1rem 5rem;
 }
 /* Contact us end */
+
+@media (min-width: 1400px) {
+  #contact-us {
+  max-width: 1170px;
+  }
+}
