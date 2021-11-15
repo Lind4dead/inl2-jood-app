@@ -37,17 +37,15 @@ p {
 .app-text {
   width: 45%;
 }
-/* .carousel-container {
-  width: 80%;
-} */
-.swiper-container{
+.swiper{
   height: auto;
+  width: 800px;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
 }
-.swiper-container .swiper-wrapper {
-  width:100%;
-}
+
   .swiper-wrapper{
--webkit-box-align: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -moz-box-align: center;
   -ms-flex-align: center;
@@ -55,40 +53,51 @@ p {
   }
   .swiper-autoheight .swiper-wrapper {
     align-items: center;
+  
     
   }
 .swiper-slide{
     background-color: transparent;
-    width: 400px;
+    width: 10rem;
     border-radius: 15%;
-    margin: auto;
+    padding: ;
+  
   }
 .swiper-slide img {
-  width: 160px;
+  width: 100%;
   opacity: .4;
+  transform: scale(.9);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
 }
 .swiper-slide-active {
-  width: 400px;
-  margin: auto;
+  width: auto;
+
 }
 .swiper-slide-active img{
       background-color: transparent;
-      width: 200px ;
-      margin: auto;
-      height: 100%;
+      width: 100% ;
+      transform: scale(1.2);
       opacity: 1;
+      transition: opacity 500ms ease-out, transform 500ms ease-out;
     }
 .swiper-slide-prev img{
       background-color: transparent;
-      width: 180px ;
-      margin: auto;
-      height: 100%;
+      width: 100% ;
+      transform: scale(1);
       opacity: .7;
+      transition: opacity 500ms ease-out, transform 500ms ease-out;
     }
 .swiper-slide-next img{
       background-color: transparent;
-      width: 180px ;
-      margin: auto;
-      height: 100%;
+      width: 100% ;
+      transform: scale(1);
       opacity: .7;
+      transition: opacity 500ms ease-out, transform 500ms ease-out;
     }
+.swiper-pagination{
+  bottom: -5px !important;
+}
+.swiper-button-next {
+  z-index: 9999;
+  /* right: -300px; */
+}
