@@ -1,11 +1,10 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
+  grabCursor: true,
   freeMode: {
-    
     enabled: true,
     sticky: true,
   },
-    
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
@@ -16,7 +15,6 @@ var swiper = new Swiper(".mySwiper", {
   },
   breakpoints: {
     1200:{
-      
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

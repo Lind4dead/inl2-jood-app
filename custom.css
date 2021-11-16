@@ -98,14 +98,17 @@ p {
   bottom: -5px !important;
 }
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-pagination {
   display: none;
 }
 
 
 @media (min-width: 1200px) {
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-pagination {
   display: block;
 }
 }
+/* Application END - Emil */
