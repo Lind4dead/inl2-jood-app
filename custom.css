@@ -14,6 +14,9 @@
   box-sizing: border-box;
 }
 /* Contact us start */
+#contact-us {
+  max-width: 1170px;
+  }
 .title {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
@@ -45,9 +48,3 @@ input {
   padding: 1rem 5rem;
 }
 /* Contact us end */
-
-@media (min-width: 1400px) {
-  #contact-us {
-  max-width: 1170px;
-  }
-}
