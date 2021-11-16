@@ -35,11 +35,11 @@ p {
   align-items: center;
 }
 .app-text {
-  width: 45%;
+  width: 50%;
 }
 .swiper{
   height: auto;
-  width: 800px;
+  width: 80%;
   padding: 3rem 0;
   margin-bottom: 2rem;
 }
@@ -97,7 +97,15 @@ p {
 .swiper-pagination{
   bottom: -5px !important;
 }
-.swiper-button-next {
-  z-index: 9999;
-  /* right: -300px; */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+
+@media (min-width: 1200px) {
+.swiper-button-next,
+.swiper-button-prev {
+  display: block;
+}
 }
