@@ -11,3 +11,167 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* FEATURE SECTION CSS */
+
+
+.features {
+  background-color: #f5f5f5;
+}
+
+/* .features-p-tagg {
+  width: 90px;
+  background-color: #ffbb003f;
+  border-radius: 7px;
+  padding: 0.5rem 0.5rem;
+} */
+
+/* NÖDLÖSNING - enklare att styla en knapp med 0 funktionalitet 
+än ett p-element där man sätter deverse stillsättning*/
+.features-btn {
+  color: var(--button-color);
+  background-color: #ffbb003f;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  outline: none;
+}
+
+.features-btn:hover {
+  cursor: default;
+}
+
+.boxes {
+  flex-direction: column;
+}
+
+.box {
+  width: 300px;
+}
+
+.explanation {
+  width: 230px; 
+}
+
+.features-icon {
+  height: 45px;
+  width: 45px;
+  background-color: #ffbb003f;
+  border-radius: 8px;
+  position: relative;
+}
+
+.features-icon i {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--button-color);
+}
+
+/* Läs mer om vad den gör exakt */
+.dots {
+  background-image: radial-gradient(lightgrey 4px, transparent 0);
+  background-size: 30px 30px;
+  height: 90px;
+  width: auto;
+}
+
+/* .dots-v2 {
+  background-image: radial-gradient(lightgrey 3px, transparent 0);
+  background-size: 30px 30px;
+  height: 200px;
+  width: 200px;
+  display: none;
+  display: none !important; 
+} */
+
+
+.feature-headline,
+.feature-description {
+  text-align: center;
+}
+
+.features-mobile {
+  display:none;
+}
+
+/* END OF FEATURE SECTION CSS */
+
+@media (min-width: 568px) {
+
+  .feature-headline,
+  .feature-description {
+    width: 430px;
+}
+
+
+
+}
+
+
+@media (min-width: 768px) {
+
+  .feature-headline,
+  .feature-description {
+    width: 500px;
+    text-align: start;
+  }
+
+  .boxes {
+    /* flex-direction: row;
+    justify-content: center; */
+  }
+  
+  .box {
+    flex: 2;
+    margin-right: 2rem;
+  }
+
+  .features-mobile img {
+    display: none;
+  }
+
+  .features {
+    background-color: #42A0FF;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+
+  /* .div-text {
+    display: flex;
+  } */
+
+  .features-mobile img {
+    display: flex;
+
+    height: 300px;
+    
+  }
+
+  .features {
+    background-color: #8a8a8a;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+
+  
+  .features {
+    background-color: #662b27d2;
+  }
+}
+
+
+@media (min-width: 1400px) { 
+
+  
+  .features {
+    background-color: #c858df;
+  }
+}
