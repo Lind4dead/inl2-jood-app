@@ -35,7 +35,7 @@ p {
   align-items: center;
 }
 .app-text {
-  width: 50%;
+  width: 70%;
 }
 .swiper{
   height: auto;
@@ -105,10 +105,13 @@ p {
 
 
 @media (min-width: 1200px) {
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination {
-  display: block;
-}
+  .app-text {
+    width: 43%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    display: block;
+  }
 }
 /* Application END - Emil */
