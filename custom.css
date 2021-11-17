@@ -32,10 +32,10 @@ p {
   background-color: #FBFBFB;
   border-radius: .5rem;
   border: none;
-  /* padding: 1rem; */
+  padding: 1rem;
 }
 input {
-  max-height: 70px;
+  max-height: 4.375rem;
 }
 *::placeholder {
   color: #CCCCCC !important;
