@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 :root {
   --bg-primary-1: #1487fd;
   --bg-primary-2: #42A0FF;
@@ -12,6 +15,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* Footer start */
+.bg {
+  background-image: url(/img/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 41pt;
+  color: #fff;
+  padding: 1rem 2rem 0 1rem;
+  position: relative;
+}
+.ball {
+  background-color: var(--button-color);
+  height: 12pt;
+  width: 12pt;
+  border-radius: 50%;
+  border-color: none;
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+.links {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #fff;
+  height: auto;
+}
+.icons {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.bg-icons {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.150);
+  border: transparent;
+  border-radius: 0.5rem;
+  position: relative;
 
 p {
   color: var(--text-color);
@@ -49,8 +97,14 @@ p {
 .item {
   /* background-color: teal; */
   /* border: 1px dotted #333; */
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+a:hover {
+  color: var(--button-color);
+}
+/* Footer end */
 
