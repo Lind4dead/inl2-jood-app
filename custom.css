@@ -102,8 +102,9 @@ p {
 .swiper-pagination {
   display: none;
 }
+/* Application END - Emil */
 
-
+/* Media queries Application START */
 @media (min-width: 992px) {
   .app-text {
     width: 43%;
@@ -114,4 +115,4 @@ p {
     display: block;
   }
 }
-/* Application END - Emil */
+/* Media queries Application END */
