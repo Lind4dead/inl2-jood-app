@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 
 :root {
   --bg-primary-1: #1487fd;
@@ -15,6 +17,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Contact us start */
+#contact-us {
+  max-width: 1170px;
+  }
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.875rem;
+  color: var(--title-color)
+}
+#contact-us p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.form-control {
+  background-color: #FBFBFB;
+  border-radius: .5rem;
+  border: none;
+  padding: 1rem;
+}
+input {
+  max-height: 4.375rem;
+}
+*::placeholder {
+  color: #CCCCCC !important;
+}
+.btn-blue {
+  background-color: #3096FE;
+  color: #FFF;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 5rem;
+}
+/* Contact us end */
 
 
 /* Footer start */
@@ -189,4 +227,5 @@ p {
   }
 }
 /* Media queries Application END */
+
 
