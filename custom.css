@@ -18,91 +18,7 @@
   box-sizing: border-box;
 }
 
-/* Contact us start */
-#contact-us {
-  max-width: 1170px;
-  }
-.title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 1.875rem;
-  color: var(--title-color)
-}
-#contact-us p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: var(--text-color);
-}
-.form-control {
-  background-color: #FBFBFB;
-  border-radius: .5rem;
-  border: none;
-  padding: 1rem;
-}
-input {
-  max-height: 4.375rem;
-}
-*::placeholder {
-  color: #CCCCCC !important;
-}
-.btn-blue {
-  background-color: #3096FE;
-  color: #FFF;
-  border: none;
-  border-radius: .5rem;
-  padding: 1rem 5rem;
-}
-/* Contact us end */
 
-
-/* Footer start */
-.bg {
-  background-image: url(/img/bg-footer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.logo {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 41pt;
-  color: #fff;
-  padding: 1rem 2rem 0 1rem;
-  position: relative;
-}
-.ball {
-  background-color: var(--button-color);
-  height: 12pt;
-  width: 12pt;
-  border-radius: 50%;
-  border-color: none;
-  position: absolute;
-  right: 5%;
-  bottom: 20%;
-}
-.links {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 1.3rem;
-  color: #fff;
-  height: auto;
-}
-.icons {
-  color: #fff;
-  font-size: 1.2rem;
-}
-.bg-icons {
-  width: 2rem;
-  height: 2rem;
-  background-color: rgba(255, 255, 255, 0.150);
-  border: transparent;
-  border-radius: 0.5rem;
-  position: relative;
-}
-a:hover {
-  color: var(--button-color);
-}
-/* Footer end */
 p {
   color: var(--text-color);
 }
@@ -215,6 +131,91 @@ p {
 }
 /* Application END - Emil */
 
+/* Contact us start */
+#contact-us {
+  max-width: 1170px;
+  }
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.875rem;
+  color: var(--title-color)
+}
+#contact-us p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.form-control {
+  background-color: #FBFBFB;
+  border-radius: .5rem;
+  border: none;
+  padding: 1rem;
+}
+input {
+  max-height: 4.375rem;
+}
+*::placeholder {
+  color: #CCCCCC !important;
+}
+.btn-blue {
+  background-color: #3096FE;
+  color: #FFF;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 5rem;
+}
+/* Contact us end */
+
+
+/* Footer start */
+.bg {
+  background-image: url(img/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 41pt;
+  color: #fff;
+  padding: 1rem 2rem 0 1rem;
+  position: relative;
+}
+.ball {
+  background-color: var(--button-color);
+  height: 12pt;
+  width: 12pt;
+  border-radius: 50%;
+  border-color: none;
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+.links {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #fff;
+  height: auto;
+}
+.icons {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.bg-icons {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.150);
+  border: transparent;
+  border-radius: 0.5rem;
+  position: relative;
+}
+a:hover {
+  color: var(--button-color);
+}
+/* Footer end */
 /* Media queries Application START */
 @media (min-width: 992px) {
   .app-text {
