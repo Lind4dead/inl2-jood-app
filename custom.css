@@ -70,21 +70,24 @@ p {
 .swiper-slide-active {
   width: auto;
 }
-.swiper-slide-active img{
+.swiper-slide-active img,
+.swiper-slide-duplicate-active img{
   background-color: transparent;
   width: 100% ;
   transform: scale(1.2);
   opacity: 1;
   transition: opacity 500ms ease-out, transform 500ms ease-out;
 }
-.swiper-slide-prev img{
+.swiper-slide-prev img,
+.swiper-slide-duplicate-prev img{
   background-color: transparent;
   width: 100% ;
   transform: scale(1);
   opacity: .7;
   transition: opacity 500ms ease-out, transform 500ms ease-out;
 }
-.swiper-slide-next img{
+.swiper-slide-next img,
+.swiper-slide-duplicate-next img{
   background-color: transparent;
   width: 100% ;
   transform: scale(1);
