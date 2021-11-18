@@ -274,8 +274,44 @@ a:hover {
   .swiper-pagination {
     display: block;
   }
+  .dwnld-section {
+    width: 50%;
+    height: 80%;
+  }
   .app-btns {
+    flex-direction: row;
     width: 100%;
+    height: 20%;
+    justify-content: space-between;
+  }
+  .phones {
+    width: 478px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #phone1 {
+    position: absolute;
+    transform: scale(.6);
+    top:80px;
+    z-index: 2;
+  }
+  #phone2 {
+    
+    position: absolute;
+    transform: scale(.6);
+    top:135px;
+    left: -10px;
+  }
+  #phone3 {
+    position: absolute;
+    
+    transform: scale(.6);
+    top:135px;
+    left: 195px;
   }
 }
 
@@ -293,29 +329,18 @@ a:hover {
   }
   .phones {
     width: 509px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  
   }
   #phone1 {
-    position: absolute;
     transform: scale(.8);
     top:45px;
-    z-index: 2;
   }
   #phone2 {
-    
-    position: absolute;
     transform: scale(.8);
     top:100px;
     left: -10px;
   }
   #phone3 {
-    position: absolute;
-    
     transform: scale(.8);
     top:100px;
     left: 220px;
