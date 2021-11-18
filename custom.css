@@ -32,9 +32,9 @@ p {
   border-radius: .4rem;
   font-size: 1rem;
 }
-.container img {
+/* .container img {
   width: 200px;
-}
+} */
 .downloads {
   display: flex;
   flex-direction: column;
@@ -72,6 +72,7 @@ p {
   width: 80%;
   padding: 3rem 0;
   margin-bottom: 2rem;
+  position: relative;
 }
 .swiper-wrapper{
   -webkit-box-align: center;
@@ -79,6 +80,7 @@ p {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 .swiper-autoheight .swiper-wrapper {
   align-items: center;  
@@ -133,16 +135,48 @@ p {
 /* Download START */
 .bg-download {
   background: url(img/downloadblueBG.png) no-repeat center/cover;
+  
+}
+.dwnld-section {
+  width: 80%;
+  height: 100%;
 }
 .btn-dwnld {
   width: 14rem;
   padding: .6rem 0;
   border: 1px solid transparent;
   border-radius: 12px ;
+  background: #f8f8f8;
+
+  transition: background .2s ease, box-shadow .2s ease;
+}
+.btn-dwnld img {
   
+  transition: transform .2s ease;
 }
 .h-dwnld {
   height: 550px;
+}
+.app-btns {
+  
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-dwnld:hover {
+  background: #ffffff;
+  box-shadow: 0 0 1px 1px #ffffff;
+}
+.btn-dwnld:hover img {
+  transform: scale(1.1);
+}
+.btn-dwnld:active img {
+  transform: scale(.9);
+}
+.phones {
+  display: none;
 }
 /* Download END */
 /* Contact us start */
@@ -239,6 +273,63 @@ a:hover {
   .swiper-button-prev,
   .swiper-pagination {
     display: block;
+  }
+  .app-btns {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1200px){
+  .dwnld-section {
+    width: 50%;
+    height: 80%;
+  }
+  .app-btns {
+    flex-direction: row;
+    width: 85%;
+    height: 20%;
+    justify-content: space-between;
+  }
+  .phones {
+    width: 509px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #phone1 {
+    position: absolute;
+    transform: scale(.8);
+    top:30px;
+    /* height: 400px; */
+    z-index: 2;
+  }
+  #phone2 {
+    
+    position: absolute;
+    transform: scale(.8);
+    top:100px;
+    left: -10px;
+    /* z-index: 1; */
+  }
+  #phone3 {
+    position: absolute;
+    
+    transform: scale(.8);
+    top:100px;
+    left: 220px;
+    /* bottom: px; */
+    /* z-index: 1; */
+  }
+}
+
+
+@media (min-width:1400px) {
+  .app-btns {
+    width: 75%;
   }
 }
 /* Media queries Application END */
