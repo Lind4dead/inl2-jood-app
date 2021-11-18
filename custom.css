@@ -17,6 +17,107 @@
   padding: 0;
   box-sizing: border-box;
 }
+.btn {
+  padding: 0.75rem 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 100%;
+}
+.btn-primary {
+  background-color: var(--button-color);
+  color: white;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 5px 2px whitesmoke
+}
+
+/* NAVBAR */
+
+.navbar {
+  padding: 0.5rem 1rem;
+  /* display: flex; */
+}
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+  color: white; 
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+} */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.nav-link:hover {
+  color: var(--button-color);
+}
+
+/* SHOWCASE */
+.topnav-bg {
+  position: absolute;
+  transform: scale(1);
+  top: -50%;
+  left: -10%;
+  right: -50%;
+  bottom: 0%;
+}
+#showcase {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.content {
+  align-self: center;
+  text-align: center;
+  padding: 0.6rem;    
+}
+.text {
+  margin-bottom: 3rem;
+  color: #FFF;
+}
+.text h1{
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 500;
+  color: white;
+}
+/* .text h1,
+.text p {
+  text-shadow: 0 0 9px whitesmoke
+} */
 
 
 p {
@@ -227,6 +328,46 @@ a:hover {
     display: block;
   }
 }
+@media (min-width: 768px ){
+  .navbar-toggler {
+      display: none;
+  }
+  .collapse:not(.show) {
+      display: block;
+  }
+  .navbar-nav {
+      flex-direction: row;
+      list-style: none;
+  }
+  a {
+      padding: 0.5rem;
+  }
+  .top-nav {
+      display: block;
+  }
+  .container {
+      max-width: 720px;
+  }
+  #showcase .container img {
+      display: inline-block;
+  }
+  .content {
+      text-align: left;
+  }
+  .btn {
+      width: auto    ;
+  }
+ }
+ @media (min-width: 992px) {
+     .container {
+         max-width: 960px;
+     }
+ }
+ @media (min-width: 1200px) {
+     .container {
+         max-width: 1140px;
+     }
+ }
 /* Media queries Application END */
 
 
