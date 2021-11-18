@@ -303,8 +303,7 @@ a:hover {
   #phone1 {
     position: absolute;
     transform: scale(.8);
-    top:30px;
-    /* height: 400px; */
+    top:45px;
     z-index: 2;
   }
   #phone2 {
@@ -313,7 +312,6 @@ a:hover {
     transform: scale(.8);
     top:100px;
     left: -10px;
-    /* z-index: 1; */
   }
   #phone3 {
     position: absolute;
@@ -321,8 +319,6 @@ a:hover {
     transform: scale(.8);
     top:100px;
     left: 220px;
-    /* bottom: px; */
-    /* z-index: 1; */
   }
 }
 
