@@ -19,6 +19,69 @@
 }
 
 
+/* Feature section START - Emma*/
+.features {
+  background-color: #f5f5f5;
+}
+.features-btn {
+  color: var(--button-color);
+  background-color: #ffbb003f;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  outline: none;
+}
+.features-btn:hover {
+  cursor: default;
+}
+.boxes {
+  flex-direction: column;
+}
+.box {
+  width: 300px;
+}
+.explanation {
+  width: 230px; 
+}
+.features-icon {
+  height: 45px;
+  width: 45px;
+  background-color: #ffbb003f;
+  border-radius: 8px;
+  position: relative;
+}
+.features-icon i {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--button-color);
+}
+.dots {
+  background-image: radial-gradient(lightgrey 4px, transparent 0);
+  background-size: 30px 30px;
+  height: 90px;
+  width: auto;
+  display: block !important;
+}
+.feature-headline,
+.feature-description {
+  text-align: center;
+}
+.features-mobile {
+  display:none;
+}
+
+/* Feature section END - Emma */
+
+
+
+
+
+
+
+
 p {
   color: var(--text-color);
 }
@@ -264,7 +327,43 @@ a:hover {
   color: var(--button-color);
 }
 /* Footer end */
-/* Media queries Application START */
+
+/* Media queries START */
+@media (min-width: 768px) {
+
+  .dots {
+      display: none;
+    }
+  
+  .dots-v2 {
+      background-image: radial-gradient(lightgrey 3px, transparent 0);
+      background-size: 30px 30px;
+      height: 300px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .feature-headline {
+      font-size: 1.7rem;
+  }
+
+  .feature-headline,
+  .feature-description {
+    width: 350px;
+    text-align: start;
+  }
+
+  .feature-description {
+    width: 470px;
+  }
+
+  .features-mobile img {
+    display: none;
+  }
+
+}
 @media (min-width: 992px) {
   .app-text {
     width: 43%;
@@ -274,6 +373,7 @@ a:hover {
   .swiper-pagination {
     display: block;
   }
+
   .dwnld-section {
     width: 50%;
     height: 80%;
@@ -316,7 +416,14 @@ a:hover {
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) { 
+
+  .dots-v2 {width: 130px;}
+
+  .features-mobile img {
+    display: flex;
+    height: 400px;
+  }
   .dwnld-section {
     width: 50%;
     height: 80%;
@@ -346,13 +453,15 @@ a:hover {
     left: 220px;
   }
 }
+@media (min-width: 1400px) { 
 
-
-@media (min-width:1400px) {
-  .app-btns {
+  .dots-v2 {width: 180px;}
+   .app-btns {
     width: 75%;
   }
+
 }
-/* Media queries Application END */
+/* Media queries END */
+
 
 
