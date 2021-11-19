@@ -17,6 +17,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+ /* About us start // Michaela */
+.col {
+  display: none;
+}
+.ecLogga {
+  display: inline;
+  display: flex;
+  justify-content: center;
 
 
 /* Feature section START - Emma*/
@@ -89,12 +97,21 @@ p {
 #about-us {
   height: 2rem;
   width: 100px;
-  background-color: #ffbb002c;
+  background-color: #ffbb0033;
   color: #ffbb00;
-  padding: .5rem;
+  padding-top: .2rem;
   border-radius: .4rem;
   font-size: 1rem;
 }
+
+.bild {
+  display: none;
+}
+@media (min-width: 768px) {
+  .content {
+    margin-left: 7rem;
+  }
+
 /* .container img {
   width: 200px;
 } */
@@ -102,7 +119,46 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
+@media (min-width: 992px) {
+  .bild {
+    display: block;
+    margin-top: 5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content {
+    margin-left: .2rem;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .bild {
+    display: block;
+    margin-top: 5rem;
+  }
+  .ecLogga {
+    display: none;
+  }
+   .col {
+     display: inline;
+   }
+}
+@media (min-width: 1400px) {
+ .bild img {
+   margin-left: 4rem;
+   margin-top: 2rem;
+ }
+ .content {
+   margin-top: 7rem;
+ }
+}
+
+/* About us slut // Michaela */
 
 /* Application - Emil */
 .app-text-color {
