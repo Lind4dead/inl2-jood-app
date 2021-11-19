@@ -59,7 +59,7 @@
   flex-direction: column;
 }
 
-/* .navbar .container {
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@
 .navbar-nav {
   display: flex;
   flex-direction: column;
-} */
+}
 .nav-link {
   color: white;
   text-decoration: none;
@@ -95,6 +95,10 @@
   background-size: cover;
   background-blend-mode: overlay;
 }
+/* #showcase .container img {
+  
+  display: none;
+} */
 .content {
   align-self: center;
   text-align: center;
@@ -116,11 +120,6 @@
   letter-spacing: 500;
   color: white;
 }
-/* .text h1,
-.text p {
-  text-shadow: 0 0 9px whitesmoke
-} */
-
 
 p {
   color: var(--text-color);
