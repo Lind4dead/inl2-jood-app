@@ -95,9 +95,9 @@ p {
   border-radius: .4rem;
   font-size: 1rem;
 }
-.container img {
+/* .container img {
   width: 200px;
-}
+} */
 .downloads {
   display: flex;
   flex-direction: column;
@@ -135,6 +135,7 @@ p {
   width: 80%;
   padding: 3rem 0;
   margin-bottom: 2rem;
+  position: relative;
 }
 .swiper-wrapper{
   -webkit-box-align: center;
@@ -142,6 +143,7 @@ p {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 .swiper-autoheight .swiper-wrapper {
   align-items: center;  
@@ -193,7 +195,53 @@ p {
   display: none;
 }
 /* Application END - Emil */
+/* Download START */
+.bg-download {
+  background: url(img/downloadblueBG.png) no-repeat center/cover;
+  
+}
+.dwnld-section {
+  width: 80%;
+  height: 100%;
+}
+.btn-dwnld {
+  width: 14rem;
+  padding: .6rem 0;
+  border: 1px solid transparent;
+  border-radius: 12px ;
+  background: #f8f8f8;
 
+  transition: background .2s ease, box-shadow .2s ease;
+}
+.btn-dwnld img {
+  
+  transition: transform .2s ease;
+}
+.h-dwnld {
+  height: 550px;
+}
+.app-btns {
+  
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-dwnld:hover {
+  background: #ffffff;
+  box-shadow: 0 0 1px 1px #ffffff;
+}
+.btn-dwnld:hover img {
+  transform: scale(1.1);
+}
+.btn-dwnld:active img {
+  transform: scale(.9);
+}
+.phones {
+  display: none;
+}
+/* Download END */
 /* Contact us start */
 #contact-us {
   max-width: 1170px;
@@ -325,8 +373,49 @@ a:hover {
   .swiper-pagination {
     display: block;
   }
-  .dots-v2 {width: 180px;}
+
+  .dwnld-section {
+    width: 50%;
+    height: 80%;
+  }
+  .app-btns {
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+  }
+  .phones {
+    width: 478px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #phone1 {
+    position: absolute;
+    transform: scale(.6);
+    top:80px;
+    z-index: 2;
+  }
+  #phone2 {
+    
+    position: absolute;
+    transform: scale(.6);
+    top:135px;
+    left: -10px;
+  }
+  #phone3 {
+    position: absolute;
+    
+    transform: scale(.6);
+    top:135px;
+    left: 195px;
+  }
 }
+
+
 @media (min-width: 1200px) { 
 
   .dots-v2 {width: 130px;}
@@ -335,10 +424,41 @@ a:hover {
     display: flex;
     height: 400px;
   }
+  .dwnld-section {
+    width: 50%;
+    height: 80%;
+  }
+  .app-btns {
+    flex-direction: row;
+    width: 85%;
+    height: 20%;
+    justify-content: space-between;
+  }
+  .phones {
+    width: 509px;
+  
+  }
+  #phone1 {
+    transform: scale(.8);
+    top:45px;
+  }
+  #phone2 {
+    transform: scale(.8);
+    top:100px;
+    left: -10px;
+  }
+  #phone3 {
+    transform: scale(.8);
+    top:100px;
+    left: 220px;
+  }
 }
 @media (min-width: 1400px) { 
 
   .dots-v2 {width: 180px;}
+   .app-btns {
+    width: 75%;
+  }
 
 }
 /* Media queries END */
