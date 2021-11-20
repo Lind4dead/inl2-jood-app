@@ -95,10 +95,13 @@
   background-size: cover;
   background-blend-mode: overlay;
 }
-/* #showcase .container img {
-  
-  display: none;
-} */
+
+#showcase .container img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
 .content {
   align-self: center;
   text-align: center;
@@ -135,7 +138,9 @@ p {
   font-size: 1rem;
 }
 .container img {
-  width: 200px;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 .downloads {
   display: flex;
