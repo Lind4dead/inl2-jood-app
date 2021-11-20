@@ -82,7 +82,7 @@
 .topnav-bg {
   z-index: -1;
   position: absolute;
-  transform: scale(1);
+  transform: scale(3);
   top: -110%;
   left: -90%;
   /* right: -50%; */
