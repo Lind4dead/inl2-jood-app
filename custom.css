@@ -39,7 +39,6 @@ p {
   border-radius: .4rem;
   font-size: 1rem;
 }
-
 .bild {
   display: none;
 }
@@ -342,11 +341,8 @@ a:hover {
 /* Footer end */
 
 /* Media queries START */
-@media (min-width: 768px) {
-  .content {
-    margin-left: 7rem;
-  }
 
+@media (min-width: 768px) {
   .dots {
       display: none;
     }
@@ -452,7 +448,7 @@ a:hover {
   .ecLogga {
     display: none;
   }
-   .col {
+   #col {
      display: inline;
    }
 
