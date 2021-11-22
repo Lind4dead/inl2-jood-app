@@ -39,10 +39,6 @@
 
 /* NAVBAR */
 
-.navbar {
-  padding: 0.5rem 1rem;
-  /* display: flex; */
-}
 .collapse:not(.show) {
   display: none;
 }
@@ -60,9 +56,18 @@
 }
 
 .navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  top: 10%;
+  bottom:10%;
+  right: 10%;
+  left: 10%;
+  margin: 0 auto;
+  text-align:center;  
+}
+.container img{
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 
 .navbar-nav {
@@ -122,6 +127,16 @@
   font-weight: 500;
   letter-spacing: 500;
   color: white;
+}
+.container {
+  height: 100%;
+  margin: auto;
+  width: auto;
+}
+.container {
+  height: 100%;
+  margin: auto;
+  width: auto;
 }
 
 p {
