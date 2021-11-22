@@ -82,7 +82,7 @@
 .topnav-bg {
   z-index: -1;
   position: absolute;
-  transform: scale(3);
+  transform: scale(1);
   top: -110%;
   left: -90%;
   /* right: -50%; */
@@ -373,7 +373,11 @@ a:hover {
      .container {
          max-width: 1140px;
      }
+     .topnav-bg {
+       transform: scale(3);
+     }
  }
+
 /* Media queries Application END */
 
 
