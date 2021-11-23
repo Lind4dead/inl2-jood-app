@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="50" viewBox="0 0 160 50">
+  <g id="Download" transform="translate(-935 -50)">
+    <g id="Rectangle_1909" data-name="Rectangle 1909" transform="translate(935 50)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="160" height="50" rx="12" stroke="none"/>
+      <rect x="1" y="1" width="158" height="48" rx="11" fill="none"/>
+    </g>
+    <text id="Download_Now" data-name="Download Now" transform="translate(961 82)" fill="#fff" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Download Now</tspan></text>
+  </g>
+</svg>

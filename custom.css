@@ -17,6 +17,118 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.btn-showcase {
+  padding: 0.75rem 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 100%;
+}
+.btn-primary-showcase {
+  background-color: var(--button-color);
+  color: white;
+}
+.btn-primary-showcase:hover {
+  box-shadow: 0 0 5px 2px whitesmoke
+}
+
+/* NAVBAR */
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+  color: white; 
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .container {
+  position: absolute;
+  top: 10%;
+  bottom:10%;
+  right: 10%;
+  left: 10%;
+  margin: 0 auto;
+  text-align:center;  
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.nav-link:hover {
+  color: var(--button-color);
+}
+
+/* SHOWCASE */
+.topnav-bg {
+  z-index: -1;
+  position: absolute;
+  transform: scale(1);
+  top: -110%;
+  left: -90%;
+  /* right: -50%; */
+  bottom: 0%;
+}
+#showcase {
+  margin-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#showcase .container img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.content {
+  align-self: center;
+  text-align: center;
+  padding: 0.6rem;    
+}
+.text {
+  margin-bottom: 3rem;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text h1{
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 500;
+  color: white;
+}
+
+
  /* About us start // Michaela */
 #col {
   display: none;
@@ -26,6 +138,7 @@
   display: flex;
   justify-content: center;
 }
+
 p {
   color: var(--text-color);
 }
@@ -39,6 +152,9 @@ p {
   border-radius: .4rem;
   font-size: 1rem;
 }
+
+
+
 .bild {
   display: none;
 }
@@ -343,6 +459,31 @@ a:hover {
 /* Media queries START */
 
 @media (min-width: 768px) {
+    .navbar-toggler {
+      display: none;
+  }
+  .collapse:not(.show) {
+      display: block;
+  }
+  .navbar-nav {
+      flex-direction: row;
+      list-style: none;
+  }
+  a {
+      padding: 0.5rem;
+  }
+  .top-nav {
+      display: block;
+  }
+  #showcase .container img {
+      display: inline-block;
+  }
+  .content {
+      text-align: left;
+  }
+  .btn-showcase {
+      width: auto;
+  }
   .dots {
       display: none;
     }
@@ -437,6 +578,9 @@ a:hover {
 
 
 @media (min-width: 1200px) { 
+   .topnav-bg {
+     transform: scale(3);
+   }
   .bild {
     display: block;
     margin-top: 5rem;
@@ -498,7 +642,10 @@ a:hover {
   }
 
 }
+
+
 /* Media queries END */
+
 
 
 
