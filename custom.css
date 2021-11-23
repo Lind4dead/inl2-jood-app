@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
 :root {
@@ -370,7 +371,8 @@ p {
   display: none;
 }
 /* Download END */
-/* Contact us start */
+
+/* Contact us START - Linnea */
 #contact-us {
   max-width: 1170px;
   }
@@ -397,17 +399,39 @@ input {
 *::placeholder {
   color: #CCCCCC !important;
 }
+form input:hover, textarea:hover {
+  box-shadow: 0 0 1.5px 1.5px #CCCCCC;
+} 
+form input:active, input:focus, textarea:active, textarea:focus{
+  box-shadow: 0 0 1.5px 1.5px #CCCCCC !important;
+}
 .btn-blue {
-  background-color: #3096FE;
+  background-color: var(--app-color);
   color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
   border: none;
   border-radius: .5rem;
   padding: 1rem 5rem;
+  box-shadow: none !important;
 }
-/* Contact us end */
+.btn-blue:hover {
+  background-color: var(--app-color);
+  color: #FFF;
+  font-size: 1.1rem;
+  box-shadow: 0 0 1.5px 1.5px var(--app-color) !important;
+}
+.btn:active, .btn-primary:active {
+  background-color: var(--button-color);
+  color: #FFF;
+  font-size: 1rem;
+  box-shadow: 0 0 1px 1px var(--button-color) !important;
+}
+/* Contact us END - Linnea */
 
 
-/* Footer start */
+/* Footer START - Linnea */
 .bg {
   background-image: url(img/bg-footer.png);
   background-repeat: no-repeat;
@@ -447,14 +471,32 @@ input {
   width: 2rem;
   height: 2rem;
   background-color: rgba(255, 255, 255, 0.150);
-  border: transparent;
+  border: none;
   border-radius: 0.5rem;
   position: relative;
 }
-a:hover {
-  color: var(--button-color);
+footer li:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+  transform: scale(1.4);
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.150);
 }
-/* Footer end */
+footer li:active {
+  background-color: var(--button-color);
+  transform: scale(1.2);
+}
+footer a:hover {
+  color: var(--button-color);
+  font-size: 1.3rem;
+}
+footer a:active {
+  color: #FBFBFB;
+  transform: scale(.9);
+}
+footer .links:active {
+  color: #ffcb3d;
+  font-size: 1.2rem;
+}
+/* Footer END - Linnea */
 
 /* Media queries START */
 
