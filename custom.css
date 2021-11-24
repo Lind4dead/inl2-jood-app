@@ -405,7 +405,7 @@ form input:hover, textarea:hover {
 form input:active, input:focus, textarea:active, textarea:focus{
   box-shadow: 0 0 1.5px 1.5px #CCCCCC !important;
 }
-.btn-blue {
+.btn-outline-primary {
   background-color: var(--app-color);
   color: #FFF;
   font-family: 'Roboto', sans-serif;
@@ -416,13 +416,13 @@ form input:active, input:focus, textarea:active, textarea:focus{
   padding: 1rem 5rem;
   box-shadow: none !important;
 }
-.btn-blue:hover {
+.btn-outline-primary:hover {
   background-color: var(--app-color);
   color: #FFF;
   font-size: 1.1rem;
   box-shadow: 0 0 1.5px 1.5px var(--app-color) !important;
 }
-.btn:active, .btn-primary:active {
+.btn-outline-primary:active {
   background-color: var(--button-color);
   color: #FFF;
   font-size: 1rem;
@@ -430,9 +430,8 @@ form input:active, input:focus, textarea:active, textarea:focus{
 }
 /* Contact us END - Linnea */
 
-
 /* Footer START - Linnea */
-.bg {
+.footer-bg {
   background-image: url(img/bg-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -475,14 +474,9 @@ form input:active, input:focus, textarea:active, textarea:focus{
   border-radius: 0.5rem;
   position: relative;
 }
-footer li:hover {
-  background-color: rgba(255, 255, 255, 0.20);
-  transform: scale(1.4);
-  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.150);
-}
-footer li:active {
-  background-color: var(--button-color);
-  transform: scale(1.2);
+footer .links:active {
+  color: var(--button-color);
+  font-size: 1.2rem;
 }
 footer a:hover {
   color: var(--button-color);
@@ -492,11 +486,17 @@ footer a:active {
   color: #FBFBFB;
   transform: scale(.9);
 }
-footer .links:active {
-  color: #ffcb3d;
-  font-size: 1.2rem;
+footer li:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+  transform: scale(1.4);
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.150);
+}
+footer li:active {
+  background-color: var(--button-color);
+  transform: scale(1.2);
 }
 /* Footer END - Linnea */
+
 
 /* Media queries START */
 
