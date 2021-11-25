@@ -89,7 +89,7 @@
   bottom: 0%;
 }
 #showcase {
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,7 +130,7 @@
 
 
  /* About us start // Michaela */
-#col {
+.col {
   display: none;
 }
 .ecLogga {
@@ -138,11 +138,9 @@
   display: flex;
   justify-content: center;
 }
-
 p {
   color: var(--text-color);
 }
-
 #about-us {
   height: 2rem;
   width: 100px;
@@ -152,18 +150,13 @@ p {
   border-radius: .4rem;
   font-size: 1rem;
 }
-
-
-
 .bild {
   display: none;
 }
-
 .downloads {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 /* About us slut // Michaela */
 
@@ -588,7 +581,7 @@ a:hover {
   .ecLogga {
     display: none;
   }
-   #col {
+   .col {
      display: inline;
    }
 
@@ -628,6 +621,16 @@ a:hover {
   }
 }
 @media (min-width: 1400px) { 
+  .about {
+    padding-bottom: 3rem;
+  }
+  .col {
+    padding-left: 6.6rem;
+  }
+  .features {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
   .bild img {
     margin-left: 4rem;
     margin-top: 2rem;
