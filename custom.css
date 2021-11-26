@@ -399,10 +399,11 @@ input {
 *::placeholder {
   color: #CCCCCC !important;
 }
+  /* Contact us effects - Linnea */
 form input:hover, textarea:hover {
   box-shadow: 0 0 1.5px 1.5px #CCCCCC;
 } 
-form input:active, input:focus, textarea:active, textarea:focus{
+form input:active, input:focus, textarea:active, textarea:focus {
   box-shadow: 0 0 1.5px 1.5px #CCCCCC !important;
 }
 .btn-outline-primary {
@@ -415,6 +416,7 @@ form input:active, input:focus, textarea:active, textarea:focus{
   border-radius: .5rem;
   padding: 1rem 5rem;
   box-shadow: none !important;
+  /* transition: all .1s ease; */
 }
 .btn-outline-primary:hover {
   background-color: var(--app-color);
@@ -474,25 +476,39 @@ form input:active, input:focus, textarea:active, textarea:focus{
   border-radius: 0.5rem;
   position: relative;
 }
+  /* Footer effects - Linnea */
 footer .links:active {
   color: var(--button-color);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+
+  transition: .2s ease;
+  /* transform: ; */
 }
 footer a:hover {
   color: var(--button-color);
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+
+  transition: .1s ease;
+  transform: scale(1.1);
+
 }
 footer a:active {
   color: #FBFBFB;
+
+  transition: .2s ease;
   transform: scale(.9);
 }
 footer li:hover {
   background-color: rgba(255, 255, 255, 0.20);
-  transform: scale(1.4);
   box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.150);
+
+  transition: .1s ease;
+  transform: scale(1.4);
 }
 footer li:active {
   background-color: var(--button-color);
+
+  transition: .2s ease;
   transform: scale(1.2);
 }
 /* Footer END - Linnea */
