@@ -397,7 +397,7 @@ p {
   align-items: center;
 }
 .btn-dwnld:hover {
-  background: #ffffff;
+  background: #ebebeb;
   box-shadow: 0 0 1px 1px #ffffff;
 }
 .btn-dwnld:hover img {
