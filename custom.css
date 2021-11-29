@@ -56,6 +56,14 @@
 .navbar {
  width: 100%;
 }
+.navbar-brand {
+  flex: 1; 
+  justify-content: center;
+}
+.navbar-brand .logo {
+  padding: 0;
+  width: 11.3rem;
+}
 
 
 
@@ -540,7 +548,7 @@ a:hover {
 }
 @media (min-width: 992px) {
   .topnav-bg {    
-    left: -100px;
+    left: -250px;
   }
   .logo {
     padding: 0 2rem 0 0;
@@ -561,10 +569,6 @@ a:hover {
   left: .6rem;
   right: 1rem;
   bottom: 0;
-  
-  }
-  .active {
-    /* color: var(--button-color) !important; */
   }
   .nav-link:hover {
     color: var(--button-color) !important;
@@ -696,6 +700,10 @@ a:hover {
   }
 }
 @media (min-width: 1400px) { 
+  .topnav-bg {    
+    left: -175px;
+  
+  }
   .bild img {
     margin-left: 4rem;
     margin-top: 2rem;
