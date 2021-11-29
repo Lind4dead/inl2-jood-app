@@ -561,7 +561,7 @@ a:hover {
     position: relative;
     border-bottom: 4px solid transparent;
     right: 100%;
-    transition: border 200ms ease-in-out, right 200ms ease;
+    transition: border 200ms ease-in-out, right 200ms ease-in-out;
   }
   .nav-link:hover::before {
   position: absolute;
