@@ -157,7 +157,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}  
+}
+.downloads .btn-dwnld:hover {
+  background: #f3f1f1;
+  box-shadow: 0 0 1px 1px #f3f1f1;
+} 
 /* About us slut // Michaela */
 
 /* Feature section START - Emma*/
