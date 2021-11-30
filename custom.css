@@ -56,11 +56,6 @@
   position: relative;
   overflow: hidden;
 }
-.collapse, .navbar-collapse {
-  /* position: absolute;
-  right: 0;
-  top: 100%; */
-}
 .nav-showcase .container {
   display: flex;
   justify-content: end;
