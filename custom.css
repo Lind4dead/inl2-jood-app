@@ -651,6 +651,18 @@ footer li:active {
   .nav-link:hover {
     color: var(--button-color) !important;
   }
+  .nav-link.active {
+    color: var(--button-color) !important;
+  }
+  .nav-link.active::before {
+  content: '';
+  position: absolute;
+  border-bottom: 4px solid var(--button-color);
+  left: .6rem;
+  right: 1rem;
+  bottom: 0;
+  transition: border 200ms ease-in-out, right 200ms ease-in-out;
+  }
   .navbar-nav {
     width: 75%;
   }
