@@ -10,6 +10,7 @@
   --title-color: #333333;
   --text-color: #8a8a8a;
   --button-color: #ffbb00;
+  --button-color-hover: #ebad03;
   --app-color: #3096FE;
 }
 
@@ -20,6 +21,13 @@
 }
 .btn-nav {
   background-color: var(--button-color);
+  border-radius: .6rem;
+  padding: .6rem 1.7rem;
+  border: 1px solid transparent;
+  transition: background-color 150ms ease;
+}
+.btn-nav:hover {
+  background-color: var(--button-color-hover);
 }
 .btn-showcase {
   padding: 0.75rem 2.5rem;
@@ -110,9 +118,20 @@
 .showcase-btn {
   width: 70%;
 }
-.btn-outline-primary {
+.btn-outline-secondary {
   border: 1px solid #fff;
   color: #fff;
+  background-color: transparent;
+  padding-block: .6rem;
+  border-radius: .6rem;
+  transition: all .1s ease;
+}
+.btn-outline-secondary:hover {
+  background-color: var(--app-color);
+  border-color: #fff;
+  box-shadow: 0 0 1.5px 1.5px var(--app-color) !important;
+  transform: scale(1.05);
+  
 }
 .lg-circle {
   height: 38px;
