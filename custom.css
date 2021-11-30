@@ -130,7 +130,7 @@
 
 
  /* About us start // Michaela */
-.col {
+.elogga .col {
   display: none;
 }
 .ecLogga {
@@ -153,11 +153,11 @@ p {
 .bild {
   display: none;
 }
-.downloads {
+  .downloads {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}  
 /* About us slut // Michaela */
 
 /* Feature section START - Emma*/
@@ -581,7 +581,7 @@ a:hover {
   .ecLogga {
     display: none;
   }
-   .col {
+   .elogga .col {
      display: inline;
    }
 
@@ -624,7 +624,7 @@ a:hover {
   .about {
     padding-bottom: 3rem;
   }
-  .col {
+  .elogga .col {
     padding-left: 6.6rem;
   }
   .features {
