@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
 :root {
@@ -400,7 +401,8 @@ p {
   display: none;
 }
 /* Download END */
-/* Contact us start */
+
+/* Contact us START - Linnea */
 #contact-us {
   max-width: 1170px;
   }
@@ -427,18 +429,42 @@ input {
 *::placeholder {
   color: #CCCCCC !important;
 }
-.btn-blue {
-  background-color: #3096FE;
+  /* Contact us effects - Linnea */
+form input:hover, textarea:hover {
+  box-shadow: 0 0 1.5px 1.5px #CCCCCC;
+} 
+form input:active, input:focus, textarea:active, textarea:focus {
+  box-shadow: 0 0 1.5px 1.5px #CCCCCC !important;
+}
+.btn-outline-primary {
+  background-color: var(--app-color);
   color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
   border: none;
   border-radius: .5rem;
   padding: 1rem 5rem;
+  box-shadow: none !important;
 }
-/* Contact us end */
+.btn-outline-primary:hover {
+  background-color: var(--app-color);
+  color: #FFF;
+  box-shadow: 0 0 1.5px 1.5px var(--app-color) !important;
+  transform: scale(1.05);
+  transition: all .1s ease;
+}
+.btn-outline-primary:active {
+  background-color: var(--button-color);
+  color: #FFF;
+  box-shadow: 0 0 1px 1px var(--button-color) !important;
+  transform: scale(1);
+  transition: all .1s ease;
+}
+/* Contact us END - Linnea */
 
-
-/* Footer start */
-.bg {
+/* Footer START - Linnea */
+.footer-bg {
   background-image: url(img/bg-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,14 +503,47 @@ input {
   width: 2rem;
   height: 2rem;
   background-color: rgba(255, 255, 255, 0.150);
-  border: transparent;
+  border: none;
   border-radius: 0.5rem;
   position: relative;
 }
-a:hover {
+  /* Footer effects - Linnea */
+footer .links:active, .links:hover {
   color: var(--button-color);
 }
-/* Footer end */
+.link-effects:hover {
+  color: var(--button-color);
+  transform: scale(1.1);
+  transition: all .1s ease;
+}
+.link-effects:active {
+  color: var(--button-color);
+  transform: scale(0.95);
+  transition: all .2s ease;
+}
+footer nav a:hover {
+  color: var(--button-color);
+  transform: scale(1.1);
+  transition: all .1s ease;
+}
+footer nav a:active {
+  color: #FBFBFB;
+  transform: scale(.9);
+  transition: all .2s ease;
+}
+footer li:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.150);
+  transform: scale(1.4);
+  transition: all .1s ease;
+}
+footer li:active {
+  background-color: var(--button-color);
+  transform: scale(1.2);
+  transition: all .2s ease;
+}
+/* Footer END - Linnea */
+
 
 /* Media queries START */
 
