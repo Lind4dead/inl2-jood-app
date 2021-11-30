@@ -18,7 +18,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.btn-nav {
+  background-color: var(--button-color);
+}
 .btn-showcase {
   padding: 0.75rem 2.5rem;
   border: 1px solid transparent;
@@ -40,10 +42,23 @@
 }
 
 /* NAVBAR */
-
-.collapse:not(.show) {
-  display: none;
+.nav-showcase {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
+/* .collapse:not(.show) {
+  display: none;
+} */
+.nav-showcase .container {
+  display: flex;
+  justify-content: end;
+}
+.navbar {
+ width: 100%;
+}
+
+
 
 .navbar-toggler {
   background-color: transparent;
@@ -52,61 +67,22 @@
   font-size: 1.7rem;
   color: white; 
 }
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar .container {
-  position: absolute;
-  top: 10%;
-  bottom:10%;
-  right: 10%;
-  left: 10%;
-  margin: 0 auto;
-  text-align:center;  
-}
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-}
-.nav-link {
-  color: white;
-  text-decoration: none;
-  margin-right: 2rem;
-}
-.nav-link:hover {
-  color: var(--button-color);
+.navbar-toggler:focus {
+  outline: none;
 }
 
 /* SHOWCASE */
 .topnav-bg {
-  z-index: -1;
   position: absolute;
   transform: scale(1);
-  top: -110%;
-  left: -90%;
-  /* right: -50%; */
-  bottom: 0%;
-}
-#showcase {
-  margin-bottom: 10rem;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
+  top: -800px;
+  z-index: -1;
+  left: -300px;
 }
 
-#showcase .container img {
-  height: 100%;
-  width: auto;
-  margin: 0 auto;
-}
 
 .content {
-  align-self: center;
-  text-align: center;
-  padding: 0.6rem;    
+  max-width: 75%;
 }
 .text {
   margin-bottom: 3rem;
@@ -127,6 +103,60 @@
   font-weight: 500;
   letter-spacing: 500;
   color: white;
+}
+.text-showcase {
+  height: 100%;
+}
+.showcase-btn {
+  width: 70%;
+}
+.btn-outline-primary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.lg-circle {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: var(--button-color);
+  outline: 1px solid var(--button-color);
+  outline-offset: 6px;
+}
+.lg-circle i {
+  color: #fff;
+}
+.btn-video:hover .lg-circle {
+  animation-name: pulse;
+  animation-duration: .6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+.showcase-phones {
+  position: relative;
+  display: none;
+  height: 700px;
+  max-width: 50%;
+}
+#showcase-phone1 {
+  position: absolute;
+  right: 0;
+  transform: scale(.9);
+}
+#showcase-phone2 {
+  position: absolute;
+  right: 193px;
+  top: 98px;
+  transform: scale(.9);
 }
 
 
@@ -518,28 +548,16 @@ footer li:active {
 /* Media queries START */
 
 @media (min-width: 768px) {
-    .navbar-toggler {
-      display: none;
-  }
-  .collapse:not(.show) {
-      display: block;
-  }
-  .navbar-nav {
-      flex-direction: row;
-      list-style: none;
-  }
-  a {
+  /* a {
       padding: 0.5rem;
-  }
+  } */
   .top-nav {
       display: block;
   }
   #showcase .container img {
       display: inline-block;
   }
-  .content {
-      text-align: left;
-  }
+
   .btn-showcase {
       width: auto;
   }
@@ -577,13 +595,44 @@ footer li:active {
 
 }
 @media (min-width: 992px) {
+  .logo {
+    padding: 0 2rem 0 0;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link.active::before {
+  position: absolute;
+  content: '';
+  border-bottom: 4px solid var(--button-color);
+  left: .6rem;
+  right: 1rem;
+  bottom: 0;
+  }
+  .active {
+    color: var(--button-color) !important;
+  }
+  .nav-link:hover {
+    color: var(--button-color) !important;
+  }
+  .navbar-nav {
+    width: 75%;
+  }
+  .showcase-phones {
+    display: inline-block;
+  }
+  #showcase-phone1 {
+    transform: scale(.9);
+  }
+  #showcase-phone2 {
+    transform: scale(.9);
+  } 
   .bild {
     display: block;
     margin-top: 5rem;
   }
-  
   .content {
-    margin-left: .2rem;
+    max-width: 45%;
   }
   .app-text {
     width: 43%;
@@ -636,10 +685,16 @@ footer li:active {
 }
 
 
-@media (min-width: 1200px) { 
-   .topnav-bg {
-     transform: scale(3);
-   }
+@media (min-width: 1200px) {
+  #showcase-phone1 {
+    transform: scale(1);
+  }
+  #showcase-phone2 {
+    transform: scale(1);
+  } 
+  .content {
+    max-width: 40%;
+  }
   .bild {
     display: block;
     margin-top: 5rem;
