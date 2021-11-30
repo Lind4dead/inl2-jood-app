@@ -692,6 +692,9 @@ footer li:active {
     transition: background-color 150ms ease;
     padding: .6rem 1.7rem;
   }
+  .navbar-nav {
+    width: 90%;
+  }
   .nav-link::before {
     content: '';
     position: relative;
