@@ -790,6 +790,9 @@ footer li:active {
   }
 }
 @media (min-width: 1400px) { 
+  .container {
+    max-width: 1200px;
+  }
   .topnav-bg {    
     left: -175px;
   
@@ -804,7 +807,7 @@ footer li:active {
 
   .dots-v2 {width: 180px;}
    .app-btns {
-    width: 75%;
+    width: 80%;
   }
 
 }
