@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); */
+@import url(//db.onlinewebfonts.com/c/a4b5ffde049fa3a187504c885d60d5de?family=URW+DIN);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 :root {
@@ -16,8 +18,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-
+h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+h3 {
+  font-weight: 500;
+}
+#showcase h1, #showcase p {
+  font-family: 'Poppins', sans-serif;
+}
+.boxes p {
+  font-size: .8rem;
+}
 .btn-showcase {
   padding: 0.75rem 2.5rem;
   border: 1px solid transparent;
@@ -235,6 +250,8 @@ p {
 /* Application - Emil */
 .app-text-color {
   color: var(--app-color);
+  font-family: "URW DIN";
+  font-weight: bold;
 }
 .grid-wrapper {
   display: grid;
@@ -338,12 +355,20 @@ p {
   border: 1px solid transparent;
   border-radius: 12px ;
   background: #f8f8f8;
+  
 
   transition: background .2s ease, box-shadow .2s ease;
 }
 .btn-dwnld img {
   
   transition: transform .2s ease;
+}
+.btn-dwnld h5 {
+  font-weight: 600;
+}
+.btn-dwnld small {
+  color: #6b6b6b;
+  font-size: .7rem;
 }
 .h-dwnld {
   height: 550px;
