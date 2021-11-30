@@ -91,6 +91,17 @@
 .topnav-bg {
   position: absolute;
   transform: scale(1);
+  top: -110%;
+  left: -90%;
+  /* right: -50%; */
+  bottom: 0%;
+}
+#showcase {
+  margin-bottom: 9rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
   top: -780px;
   z-index: -1;
   left: -300px;
@@ -190,7 +201,7 @@
 
 
  /* About us start // Michaela */
-#col {
+.elogga .col {
   display: none;
 }
 .ecLogga {
@@ -198,11 +209,9 @@
   display: flex;
   justify-content: center;
 }
-
 p {
   color: var(--text-color);
 }
-
 #about-us {
   height: 2rem;
   width: 100px;
@@ -212,19 +221,18 @@ p {
   border-radius: .4rem;
   font-size: 1rem;
 }
-
-
-
 .bild {
   display: none;
 }
-
-.downloads {
+  .downloads {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+.downloads .btn-dwnld:hover {
+  background: #f3f1f1;
+  box-shadow: 0 0 1px 1px #f3f1f1;
+} 
 /* About us slut // Michaela */
 
 /* Feature section START - Emma*/
@@ -750,7 +758,7 @@ footer li:active {
   .ecLogga {
     display: none;
   }
-   #col {
+   .elogga .col {
      display: inline;
    }
 
@@ -790,12 +798,23 @@ footer li:active {
   }
 }
 @media (min-width: 1400px) { 
+  .about {
+    padding-bottom: 3rem;
+  }
+  .elogga .col {
+    padding-left: 6.6rem;
+  }
+  .features {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
   .container {
     max-width: 1200px;
   }
   .topnav-bg {    
     left: -175px;
   
+
   }
   .bild img {
     margin-left: 4rem;
