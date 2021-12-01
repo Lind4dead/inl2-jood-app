@@ -52,6 +52,9 @@
 
 /* NAVBAR */
 .nav-showcase {
+  background-image: url(img/Group\ 4510-resized.png);
+  background-repeat: no-repeat;
+  background-position: center 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -72,9 +75,7 @@
   width: 11.3rem;
 }
 .navbar-nav {
-  /* gap: 1rem; */
   flex-direction: row;
-  /* width: 90%; */
 }
 .hide {
   display: none;
@@ -129,23 +130,13 @@ bottom: 0;
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-/* .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon   {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 187, 0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-} */
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon   {
   background-image: url(img/x-lg.svg);
 }
 
 
 /* SHOWCASE */
-.topnav-bg {
-  position: absolute;
-  transform: scale(1);
-  top: -780px;
-  z-index: -1;
-  left: -300px;
-}
-
 
 .content {
   max-width: 75%;
@@ -628,9 +619,7 @@ footer li:active {
 
 @media (min-width: 768px) {
   
-  /* a {
-      padding: 0.5rem;
-  } */
+
 
   .hide {
     display: inline;
@@ -680,9 +669,7 @@ footer li:active {
 
 }
 @media (min-width: 992px) {
-  .topnav-bg {    
-    left: -250px;
-  }
+  
   .logo {
     padding: 0 2rem 0 0;
   }
@@ -788,6 +775,9 @@ footer li:active {
 
 
 @media (min-width: 1200px) {
+  .nav-showcase {
+    background-position: center 91%;
+  }
   #showcase-phone1 {
     transform: scale(1);
   }
@@ -847,9 +837,9 @@ footer li:active {
   .container {
     max-width: 1200px;
   }
-  .topnav-bg {    
-    left: -175px;
-  
+  .nav-showcase {
+    background-size: 130%;
+    background-position: bottom 150%;
   }
   .bild img {
     margin-left: 4rem;
