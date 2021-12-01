@@ -53,9 +53,13 @@ h3 {
   transition: background-color 150ms ease;
   font-size: .9rem;
   font-weight: 500;
+  box-shadow: none !important;
 }
 .btn-nav:hover {
   background-color: var(--button-color-hover);
+}
+.btn-nav:active {
+  background-color: #ffbb009f;
 }
 .btn-showcase {
   padding: 0.75rem 2.5rem;
@@ -111,9 +115,14 @@ h3 {
   position: relative;
   font-weight: 500;
   color: #fff !important;
+
+  transition: color 150ms ease-in-out;
 }
 .nav-link:hover {
   color: var(--button-color) !important;
+}
+.nav-link:active {
+  color: #ffbb00a9 !important;
 }
 .nav-link.active {
   color: var(--button-color) !important;
@@ -135,11 +144,11 @@ h3 {
   transition: border 200ms ease-in-out, right 200ms ease-in-out;
 }
 .nav-link:hover::before {
-position: absolute;
-border-bottom: 4px solid var(--button-color);
-left: 0;
-right: 1rem;
-bottom: 0;
+  position: absolute;
+  border-bottom: 4px solid var(--button-color);
+  left: 0;
+  right: 1rem;
+  bottom: 0;
 }
 
 .navbar-toggler {
@@ -203,12 +212,16 @@ bottom: 0;
   padding-block: .6rem;
   border-radius: .6rem;
   transition: all .1s ease;
+  box-shadow: none !important;
 }
 .btn-outline-secondary:hover {
   background-color: var(--app-color);
   border-color: #fff;
   box-shadow: 0 0 1.5px 1.5px var(--app-color) !important;
   transform: scale(1.05);
+}
+.btn-outline-secondary:active {
+  background-color: var(--button-color);
   
 }
 .lg-circle {
@@ -218,15 +231,34 @@ bottom: 0;
   background-color: var(--button-color);
   outline: 1px solid var(--button-color);
   outline-offset: 6px;
+
+  transition: transform 200ms ease, background-color 200ms ease;
 }
 .lg-circle i {
   color: #fff;
+}
+.btn-video {
+  box-shadow: none !important;
+}
+.btn-video small {
+  transition: color 200ms ease;
+}
+.btn-video:hover small {
+  color: var(--button-color-hover) !important;
+}
+.btn-video:active small {
+  color: var(--button-color) !important;
 }
 .btn-video:hover .lg-circle {
   animation-name: pulse;
   animation-duration: .6s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  background-color: var(--button-color-hover);
+}
+.btn-video:active .lg-circle {
+  transform: scale(.7);
+  background-color: var(--button-color);
 }
 @keyframes pulse {
   0% {
@@ -245,7 +277,6 @@ bottom: 0;
   display: none;
   height: 700px;
   max-width: 50%;
-  /* margin-bottom: 10rem; */
 }
 #showcase-phone1 {
   position: absolute;
