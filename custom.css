@@ -57,7 +57,7 @@
   background-position: center 100%;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .nav-showcase .container {
   display: flex;
@@ -216,6 +216,7 @@ bottom: 0;
   display: none;
   height: 700px;
   max-width: 50%;
+  /* margin-bottom: 10rem; */
 }
 #showcase-phone1 {
   position: absolute;
@@ -673,6 +674,9 @@ footer li:active {
   .logo {
     padding: 0 2rem 0 0;
   }
+  .nav-showcase {
+    height: 100%;
+  }
   .btn-nav {
     display: inline-block;
     background-color: var(--button-color);
@@ -836,10 +840,12 @@ footer li:active {
 @media (min-width: 1400px) { 
   .container {
     max-width: 1200px;
+    /* height: 1080px; */
   }
   .nav-showcase {
-    background-size: 130%;
-    background-position: bottom 150%;
+    background-size: 120%;
+    background-position: center 97%;
+    height: 60rem;
   }
   .bild img {
     margin-left: 4rem;
@@ -854,6 +860,15 @@ footer li:active {
     width: 80%;
   }
 
+}
+
+@media (min-width:1890px) {
+  .nav-showcase {
+    background-size: 105%;
+    background-position: center 92%;
+    height: 60rem;
+  }
+  
 }
 
 
