@@ -175,7 +175,7 @@ h3 {
 
 /* SHOWCASE */
 
-.content {
+.showcase-content {
   max-width: 75%;
 }
 .text {
@@ -201,8 +201,12 @@ h3 {
 .text-showcase {
   height: 100%;
 }
-p.text-light {
+.text-showcase h1 {
+  line-height: 2.7rem;
+}
+.text-showcase p {
   margin-bottom: 1.5rem; 
+  line-height: 2rem;
 }
 .showcase-btn {
   width: 70%;
@@ -806,6 +810,9 @@ footer li:active {
   bottom: 0;
   transition: border 200ms ease-in-out, right 200ms ease-in-out;
   }
+  .text-showcase h1 {
+    line-height: 3.4rem;
+  }
   .showcase-btn {
     width: 70%;
   }
@@ -822,7 +829,7 @@ footer li:active {
     display: block;
     margin-top: 5rem;
   }
-  .content {
+  .showcase-content {
     max-width: 45%;
   }
   .app-text {
@@ -891,8 +898,15 @@ footer li:active {
   #showcase-phone2 {
     transform: scale(1);
   } 
-  .content {
-    max-width: 40%;
+  .showcase-content {
+    /* max-width: 40%; */
+  }
+  .p-showcase {
+    max-width: 85%;
+  }
+  #showcase h1{
+   font-size: 3rem;
+   line-height: 4.3rem;
   }
   .bild {
     display: block;
