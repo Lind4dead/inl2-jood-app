@@ -201,6 +201,9 @@ h3 {
 .text-showcase {
   height: 100%;
 }
+p.text-light {
+  margin-bottom: 1.5rem; 
+}
 .showcase-btn {
   width: 70%;
 }
@@ -238,7 +241,7 @@ h3 {
 }
 .btn-video {
   box-shadow: none !important;
-  margin-top: .8rem;
+  margin-top: 1.4rem;
 }
 .btn-video small {
   transition: color 200ms ease;
