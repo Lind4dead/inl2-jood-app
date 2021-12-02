@@ -271,7 +271,9 @@ h3 {
     outline-offset: 6px;
   }
 }
-
+.btn.btn-video {
+  padding: 0;
+}
 
 .showcase-phones {
   position: relative;
@@ -815,6 +817,9 @@ footer li:active {
   right: 1rem;
   bottom: 0;
   transition: border 200ms ease-in-out, right 200ms ease-in-out;
+  }
+  .showcase-btn {
+    width: 70%;
   }
   .showcase-phones {
     display: inline-block;
