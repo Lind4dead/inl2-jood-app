@@ -86,7 +86,7 @@ h3 {
   background-image: url(img/Group\ 4510-resized.png);
   background-repeat: no-repeat;
   background-position: center 100%;
-  height: 100vh;
+  height: 800px;
   position: relative;
   /* overflow: hidden; */
 }
@@ -358,10 +358,13 @@ p {
   flex-direction: column;
 }
 .box {
-  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .4rem;
 }
 .explanation {
-  width: 230px; 
+  width: 60%; 
 }
 .features-icon {
   height: 45px;
@@ -413,7 +416,7 @@ p {
 .grid-wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: minmax(auto, auto);
   gap: 1rem;
 }
@@ -504,7 +507,7 @@ p {
 }
 .dwnld-section {
   width: 80%;
-  height: 100%;
+  /* height: 100%; */
 }
 .btn-dwnld {
   width: 14rem;
@@ -530,7 +533,7 @@ p {
   font-weight: 500;
 }
 .h-dwnld {
-  height: 550px;
+  min-height: 550px;
 }
 .app-btns {
   
@@ -539,6 +542,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap:1rem;
 }
 .btn-dwnld:hover {
   background: #ebebeb;
@@ -597,7 +601,7 @@ form input:active, input:focus, textarea:active, textarea:focus {
   font-size: 1rem;
   border: none;
   border-radius: .5rem;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   box-shadow: none !important;
 }
 .btn-outline-primary:hover {
@@ -698,11 +702,29 @@ footer li:active {
 
 
 /* Media queries START */
-
+@media (min-width: 425px) {
+  .box {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    text-align: start;
+    width: 300px;
+  }
+  .features-icon {
+    margin-top: .5rem;
+  }
+  .explanation {
+    width: 230px;
+  }
+  .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-outline-primary {
+    padding: 1rem 5rem;
+  }
+}
 @media (min-width: 768px) {
   
-
-
   .hide {
     display: inline;
   }
@@ -748,7 +770,9 @@ footer li:active {
   .features-mobile img {
     display: none;
   }
-
+  .h-dwnld {
+    height: 550px;
+  }
 }
 @media (min-width: 992px) {
   
@@ -816,7 +840,9 @@ footer li:active {
   .swiper-pagination {
     display: block;
   }
-
+  .grid-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .dwnld-section {
     width: 50%;
     height: 80%;
@@ -838,12 +864,12 @@ footer li:active {
   }
   #phone1 {
     position: absolute;
-    transform: scale(.6);
-    top:80px;
+    transform: scale(.8);
+    top:-30px;
     z-index: 2;
   }
   #phone2 {
-    
+    display: none;
     position: absolute;
     transform: scale(.6);
     top:135px;
@@ -851,7 +877,7 @@ footer li:active {
   }
   #phone3 {
     position: absolute;
-    
+    display: none;
     transform: scale(.6);
     top:135px;
     left: 195px;
@@ -911,11 +937,13 @@ footer li:active {
     top:45px;
   }
   #phone2 {
+    display: inline-block;
     transform: scale(.8);
     top:100px;
     left: -10px;
   }
   #phone3 {
+    display: inline-block;
     transform: scale(.8);
     top:100px;
     left: 220px;
