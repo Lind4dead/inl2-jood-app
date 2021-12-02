@@ -239,6 +239,7 @@ h3 {
 }
 .btn-video {
   box-shadow: none !important;
+  margin-top: .8rem;
 }
 .btn-video small {
   transition: color 200ms ease;
@@ -854,6 +855,9 @@ footer li:active {
     transform: scale(.6);
     top:135px;
     left: 195px;
+  }
+  .btn-video {
+    margin-top: 0;
   }
 }
 
