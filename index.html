@@ -73,7 +73,7 @@
     <!-- Showcase start //Rojvan och Emil-->
     <section id="showcase">
       <div class="container w-100 d-flex align-items-center justify-content-center justify-content-lg-between">
-        <div class="content d-flex flex-column text-center text-lg-start align-items-center align-items-lg-start animate__animated animate__fadeInDown">
+        <div class="content d-flex flex-column text-center text-lg-start align-items-center align-items-lg-start wow animate__animated animate__fadeInDown">
           <div class="text-showcase d-flex flex-column justify-content-evenly">
 
             <h1 class="text-light">Creative Way to Showcase Your App</h1>
@@ -87,9 +87,9 @@
             </button>
           </div>
         </div>
-        <div class="showcase-phones animate__animated animate__fadeInDown">
-          <img src="img/iPhone X - Light.png" alt="iPhone" id="showcase-phone1" class="animate__animated animate__fadeInDown ">
-          <img src="img/iPhone X - Light.png" alt="iPhone" id="showcase-phone2" >
+        <div class="showcase-phones">
+          <img src="img/iPhone X - Light.png" alt="iPhone" id="showcase-phone1" class="animate__animated animate__fadeInDown animate__delay-1s">
+          <img src="img/iPhone X - Light.png" alt="iPhone" id="showcase-phone2" class="animate__animated animate__fadeInDown ">
         </div>
       </div>
     </section>
@@ -133,7 +133,7 @@
       </div>
 
       <div class="container-1 mb-3">
-        <div class="content  animate__animated animate__fadeInRight" div style="max-width: 600px;">
+        <div class="content wow animate__animated animate__fadeInRight" div style="max-width: 600px;">
           <button class="features-btn mt-2 mb-2 d-flex">About Us</button>
           <h2 class="fw-bolder text-center text-md-start feature-headline">Easy To Search Your Items By This App</h2>
           <p class="text-center text-md-start mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -144,7 +144,7 @@
             recently</p>
         </div>
 
-        <div class="downloads text-xl-start d-md-flex flex-md-row  animate__animated animate__fadeIn animate__delay-1s">
+        <div class="downloads text-xl-start d-md-flex flex-md-row wow animate__animated animate__fadeIn animate__delay-1s">
           <button class="btn-dwnld d-flex justify-content-evenly align-items-center me-4 my-3">
             <img src="img/googleplay.png" alt="">
             <div class="text-start">
@@ -286,7 +286,7 @@
       </p>
     </div>
 
-    <div class="grid-wrapper animate__animated animate__fadeIn ">
+    <div class="grid-wrapper wow animate__animated animate__fadeIn ">
       <div class="item d-flex flex-column">
         <h2 class="app-text-color">+ 1430</h2>
         <h3>Clients</h3>
@@ -311,7 +311,7 @@
   <div class="bg-download mt-5">
     <div class="container h-dwnld d-flex justify-content-lg-between justify-content-center align-items-center">
       <div
-        class="dwnld-section d-flex flex-column justify-content-around justify-content-lg-evenly py-4 align-items-center align-items-lg-start animate__animated animate__zoomInDown">
+        class="dwnld-section d-flex flex-column justify-content-around justify-content-lg-evenly py-4 align-items-center align-items-lg-start wow animate__animated animate__zoomInDown">
 
         <h2 class="text-center text-lg-start text-light w-75">Download the application now to enjoy its features!</h2>
         <p class="text-center text-lg-start text-light w-75">Lorem Ipsum is simply dummy text of the printing and
@@ -335,7 +335,7 @@
           </button>
         </div>
       </div>
-      <div class="phones animate__animated animate__fadeInRight">
+      <div class="phones wow animate__animated animate__fadeInRight">
         <div id="phone1"><img src="img/iPhone X - Light.png" alt=""></div>
         <div id="phone2"><img src="img/iPhone X - Light.png" alt=""></div>
         <div id="phone3"><img src="img/iPhone X - Light.png" alt=""></div>
@@ -377,7 +377,7 @@
 
       <div class="row">
         <div class="col mt-4 text-center">
-          <button type="submit" class="btn btn-outline-primary animate__animated animate__rotateIn animate__infinite infinite">Send</button>
+          <button type="submit" class="btn btn-outline-primary wow animate__animated animate__fadeIn">Send</button>
         </div>
       </div>
     </form>
@@ -442,6 +442,8 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script> new WOW().init();</script>
   <script src="js.js"></script>
 </body>
 
